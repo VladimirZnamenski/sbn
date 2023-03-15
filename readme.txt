@@ -27,4 +27,6 @@ Start a project named "sbn" (Saint-Benoit-de-Nursie) in a current "." directory
 django-admin startproject sbn .
 
 Configure git
-...
+GitHub Error: Authentication Failed from the Command Line
+https://ginnyfahs.medium.com/github-error-authentication-failed-from-command-line-3a545bfd0ca8
+github token
