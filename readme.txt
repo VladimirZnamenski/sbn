@@ -27,6 +27,18 @@ Start a project named "sbn" (Saint-Benoit-de-Nursie) in a current "." directory
 django-admin startproject sbn .
 
 Configure git
+git config user.email "zvg@mcn.com"
+git config user.name "zvg"
+
+git remote add origin https://github.com/VladimirZnamenski/sbn.git
+git push --set-upstream sbn master
+
+git add .
+git commit -m ""
+git push origin main
+
 GitHub Error: Authentication Failed from the Command Line
 https://ginnyfahs.medium.com/github-error-authentication-failed-from-command-line-3a545bfd0ca8
 github token
+
+
