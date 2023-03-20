@@ -11,7 +11,7 @@ pip3 freeze
 To exit (deactivate) the virtual environment:
 deactivate
 
-Install Django
+Install Django (Django for beginners https://djangoforbeginners.com/pages-app/)
 (activate the venv to install Django in the virtual environment and not globally)
 pip install django
 
@@ -40,5 +40,29 @@ git push origin main
 GitHub Error: Authentication Failed from the Command Line
 https://ginnyfahs.medium.com/github-error-authentication-failed-from-command-line-3a545bfd0ca8
 github token
+
+Configure a Web Apprication
+https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/
+Click Web
+Modify the Code section
+Source code: /home/saintbenoitdenursie/sbn/sbn (where settings.py is located)
+Working directory: /home/saintbenoitdenursie/sbn
+Modify /var/www/saintbenoitdenursie_pythonanywhere_com_wsgi.py
+Removing everything except for DJANGO
+Uncomment the DJANGO portion
+Modify: path = '/home/saintbenoitdenursie/sbn'
+Modify: os.environ['DJANGO_SETTINGS_MODULE'] = 'sbn.settings'
+
+Create a static folder for static files /home/saintbenoitdenursie/sbn/static
+Configure Static files: /home/saintbenoitdenursie/sbn/static
+
+Modify ALLOWED_HOSTS = ['saintbenoitdenursie.pythonanywhere.com'] in /home/saintbenoitdenursie/sbn/sbn/settings.py
+
+Create the Pages App
+python manage.py startapp pages
+add a new app to "settings.py" in the INSTALLED_APPS section "pages.apps.PagesConfig",
+create /home/saintbenoitdenursie/sbn/pages/urls.py
+
+
 
 
